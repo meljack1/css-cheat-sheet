@@ -1,0 +1,107 @@
+:root {
+    --background: #5C5346;
+    --text: #f0f2ef;
+    --highlight: #ffbe3d;
+  }
+
+* {
+    font-size: 16px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3;
+    background-color: var(--background);
+    color: var(--text);
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 20px;
+    text-align: center;
+    color: var(--highlight);
+
+}
+
+#introduction {
+    font-size: 1.2rem;
+    margin: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    margin: 10px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: dashed 2px var(--highlight); 
+    margin: 10px 10px 20px 10px;
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: -15px;
+    margin-left: 10px;
+    background: var(--background);
+    color: var(--highlight);
+    width: 200px;
+    text-align: center;
+}
+
+.code-box {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(255, 190, 61, 0.5);
+    font-family: monospace;
+    color: rgb(240, 242, 239, 0.75);
+    transition-duration: 0.3s;
+}
+
+.code-box:hover {
+   background-color: rgb(255, 190, 61);
+   color: black;
+}
+
+.indented-code {
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 650px) {
+    main {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .card {
+        width: 46%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    * {
+        font-size: 20px;
+    }
+
+    body {
+        width: 90%;
+        margin: auto;
+    }
+
+    .card {
+        width: 30%;
+        padding: 10px;
+    }
+
+
+    h2 {
+        width: 250px;
+        margin-top: -25px;
+    }
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\assets\css\reset.css">
+    <link rel="stylesheet" href=".\assets\css\style.css">
+    <title>CSS Backgrounds</title>
+</head>
+<body>
+    <header>
+        <h1>
+            CSS Backgrounds
+        </h1>
+        <p id="introduction">
+            Need a cool background for your webpage but can't remember the CSS? Try one of these styles! 
+        </p>
+    </header>
+    <main>
+        <figure class="card">
+            <h2>
+                Tranparency
+            </h2>
+            <p>
+                This will create a slightly transparent single-colour background.
+            </p>
+            <div class="code-box">
+                <code>
+                    .transparent-background {
+                        <div class="indented-code">
+                            background-color: green; <br>
+                            opacity: 0.3;
+                        </div>
+                    }
+
+                </code>
+            </div>
+        </figure>
+        <figure class="card">
+            <h2>
+                Linear Gradient
+            </h2>
+            <p>
+                This will create a background linear gradient going diagonally.
+            </p>
+            <div class="code-box">
+                <code>
+                    .linear-gradient { 
+                        <div class="indented-code">background: linear-gradient(45deg, #2d054a, #4B0082, #2d054a);</div>
+                    }
+                </code>
+            </div>
+        </figure>
+        <figure class="card">
+            <h2>
+                Full Page Image
+            </h2>
+            <p>
+                This will create a background with an image that covers the full page.
+            </p>
+            <div class="code-box">
+                <code>
+                    .cover-background {
+                        <div class="indented-code">
+                            background: no-repeat top fixed url("#");
+                        </div>
+                    }
+
+                </code>
+            </div>
+        </figure>
+        <figure class="card">
+            <h2>
+                Tiled Image
+            </h2>
+            <p>
+                This will create a background by repeating an image to fill the background.
+            </p>
+            <div class="code-box">
+                <code>
+                    .tiled-background {
+                        <div class="indented-code">
+                            background-image: url("#");
+                            <br> 
+                            background-repeat: repeat;
+                        </div>
+                    }
+
+                </code>
+            </div>
+        </figure>
+        <figure class="card">
+            <h2>
+                Striped Background
+            </h2>
+            <p>
+                This will create a vertically striped background.
+            </p>
+            <div class="code-box">
+                <code>
+                    .striped-background {
+                        <div class="indented-code">
+                            repeating-linear-gradient(45deg, <br>
+                            #606dbc, <br>
+                            #606dbc 10px, <br>
+                            #465298 10px, <br>
+                            #465298 20px
+                        </div>
+                    }
+
+                </code>
+            </div>
+        </figure>
+        <figure class="card">
+            <h2>
+                Radial Gradient
+            </h2>
+            <p>
+                This will create a background with a circular gradient.
+            </p>
+            <div class="code-box">
+                <code>
+                    .radial-gradient {
+                        <div class="indented-code">
+                            background: radial-gradient(#e66465, #9198e5);
+                        </div>
+                    }
+
+                </code>
+            </div>
+        </figure>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
